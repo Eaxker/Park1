@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView android:id="@+id/back_me"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_me"/>
+            <TextView android:id="@+id/title_revise"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:text=""
+                android:layout_weight="2.94" />
+            <ImageView
+                android:id="@+id/conserve_IV"
+                android:layout_gravity="right"
+                android:paddingEnd="20dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/conserve"  />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <EditText android:id="@+id/revise_ET"
+        android:background="#fff"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View android:background="#1a1818"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

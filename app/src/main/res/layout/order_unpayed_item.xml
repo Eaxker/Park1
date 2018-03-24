@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="#d4eda6"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="2dp">
+            <!--停车场商家图片-->
+            <ImageView
+                android:id="@+id/parking_image1_order"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/parking_image3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车位详情：" />
+
+                <TextView
+                    android:id="@+id/parking_lot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="A2-1号"
+                    android:textColor="#57e441"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="2dp">
+            <!--停车场商家名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/parking_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textColor="#121df2"
+                    android:src="@drawable/parking_image3"
+                    android:text="万达停车场"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/order_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+
+                    android:text="未付款"
+                    android:textColor="#ef301f" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单时间"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起:"
+                    android:textColor="#3bd93e" />
+
+                <TextView
+                    android:id="@+id/start_parking_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="2017-10-14 23:11:58"
+                    android:textColor="#3bd93e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="终:"
+                    android:textColor="#cc4039" />
+
+                <TextView
+                    android:id="@+id/end_parking_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="2017-10-14 23:11:58"
+                    android:textColor="#cc4039" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总费:   ¥" />
+
+                <TextView android:id="@+id/pay"
+                    android:text="20"
+                    android:textSize="18sp"
+                    android:textColor="#d9af0c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/to_pay"
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#fff"
+                    android:text="去付款"
+                    android:shadowRadius="3"
+                    android:background="#f1512d"
+                    android:layout_width="70dp"
+                    android:layout_height="43dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

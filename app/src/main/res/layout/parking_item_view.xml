@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f2f2"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/parking_image1"
+                android:layout_width="162dp"
+                android:layout_height="100dp"
+                android:padding="2dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/parking_image3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/parking_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:text="AA停车场"
+                android:textColor="#3135f9"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/parking_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="西安市政府南路22" />
+                    <TextView
+                        android:id="@+id/freight_basis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="9dp"
+                        android:text="¥2.5/h"
+                        android:textColor="#b138ed" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/thumbs_up_view"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="30dp"
+                        android:src="@drawable/thumbs_up0" />
+
+                    <TextView
+                        android:id="@+id/thumbs_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="26.5dp"
+                        android:paddingTop="2dp"
+                        android:text="100"
+                        android:textColor="#c4c106" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:text="评分："
+                        android:textSize="12sp"
+                        android:textColor="#df7676"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/assess_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="2.3"
+                        android:textColor="#fac003" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/assess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="110"
+                        android:textColor="#cac002" />
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="人" />
+
+                    <TextView android:textSize="13sp"
+                        android:id="@+id/assess_attach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="评价过" />
+
+                    <TextView
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="仅剩：" />
+
+                    <TextView
+                        android:id="@+id/residual_lot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20"
+                        android:textColor="#2df14a" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="车位" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>

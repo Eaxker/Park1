@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <litepal>
+    <dbname value="Park1"></dbname>
+    <version value="12"></version>
+    <list>
+        <mapping class="com.example.easts.park.db.Parking"></mapping>
+        <mapping class="com.example.easts.park.db.Order1"></mapping>
+    </list>
+</litepal>

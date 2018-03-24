@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:dropDownVerticalOffset="?attr/actionBarSize"
+            android:entries="@array/City"
+            android:popupBackground="#dce6e6"
+
+            android:spinnerMode="dropdown" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:imeOptions="actionSearch"
+            android:iconifiedByDefault="false"
+            android:queryHint="输入停车场名"
+            android:layout_width="218dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.57">
+
+        </android.support.v7.widget.SearchView>
+        <ImageView
+            android:id="@+id/locate"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/locate" />
+    </LinearLayout>
+    <ListView android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/changeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#aea3a3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="推荐停车场"
+                android:textSize="20sp"/>
+
+            <Spinner
+
+                android:id="@+id/spinnerArea"
+                android:layout_width="100dp"
+                android:entries="@array/Area"
+                android:layout_height="match_parent"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/Term"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_parking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/parks_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

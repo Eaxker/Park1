@@ -1,0 +1,20 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 214 ciObject found
+ciMethod java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; 0 0 1 0 -1
+ciMethod java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V 7169 1 896 0 -1
+ciMethod java/nio/Buffer nextGetIndex ()I 4097 1 6984 0 0
+ciMethod java/lang/Float floatToIntBits (F)I 961 1 60 0 -1
+ciMethod java/lang/Float intBitsToFloat (I)F 1921 1 240 0 -1
+ciMethod java/lang/Double doubleToLongBits (D)J 401 1 40 0 -1
+ciMethod java/lang/Double longBitsToDouble (J)D 1281 1 129 0 -1
+ciMethod java/lang/Integer valueOf (I)Ljava/lang/Integer; 2337 1 38179 0 -1
+ciMethod java/lang/Long numberOfLeadingZeros (J)I 4097 1 21611 0 -1
+ciMethod java/lang/Long numberOfTrailingZeros (J)I 1625 1 172 0 -1
+ciMethod java/nio/ByteBuffer get ()B 0 0 1 0 -1
+ciMethod java/nio/HeapByteBuffer ix (I)I 4097 1 151766 0 0
+ciMethod java/nio/HeapByteBuffer get ()B 4097 1 6984 0 160
+ciMethod java/lang/IllegalStateException <init> (Ljava/lang/String;)V 0 0 1 0 -1
+ciMethodData java/nio/HeapByteBuffer ix (I)I 2 151766 orig 264 8 110 251 102 0 0 0 0 40 170 53 20 0 0 0 0 40 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 177 118 18 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/nio/HeapByteBuffer get ()B 2 6984 orig 264 8 110 251 102 0 0 0 0 200 170 53 20 0 0 0 0 168 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 65 202 0 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 96 0 0 0 255 255 255 255 5 0 6 0 0 0 0 0 data 12 0x60005 0x3d9 0x15f54930 0x156f 0x0 0x0 0x90005 0x0 0x15f54930 0x1948 0x0 0x0 oops 2

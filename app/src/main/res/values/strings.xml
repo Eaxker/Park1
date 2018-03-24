@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Park</string>
+
+    <string-array name="City">
+        <item>城市</item>
+        <item>西安</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>宝鸡</item>
+    </string-array>
+    <string-array name="Area">
+        <item>全城</item>
+        <item>长安区</item>
+        <item>莲湖区</item>
+        <item>未央区</item>
+        <item>雁塔区</item>
+    </string-array>
+    <string-array name="Term">
+        <item>智能推荐</item>
+        <item>好评优先</item>
+        <item>上海</item>
+        <item>离我最近</item>
+        <item>人均最低</item>
+    </string-array>
+
+</resources>

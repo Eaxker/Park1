@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+   >
+<LinearLayout android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+  <android.support.v7.widget.Toolbar
+  xmlns:android="http://schemas.android.com/apk/res/android"
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+       <TextView
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:textColor="#fff"
+           android:text="主上信息"
+           />
+       <ImageView
+           android:id="@+id/collection"
+            android:layout_gravity="right"
+           android:paddingEnd="20dp"
+           android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+           android:layout_marginRight="5dp"
+           android:src="@drawable/collections" />
+   </android.support.v7.widget.Toolbar>
+
+   <RelativeLayout
+        android:background="#74e5e7"
+       android:layout_width="match_parent"
+       android:layout_height="105dp">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/head_sculpture"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+           android:layout_width="65dp"
+           android:layout_height="65dp"
+           android:src="@drawable/gril"/>
+
+       <TextView  android:id="@+id/usename"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="20dp"
+           android:gravity="center_vertical"
+           android:layout_toEndOf="@+id/head_sculpture"
+           android:layout_width="200dp"
+           android:layout_height="30dp"
+           android:text="小明"
+           android:textColor="@color/colorPrimary"
+           android:textSize="18dp"
+           android:layout_alignParentTop="true"
+            />
+       <!--账号余额-->
+       <TextView android:id="@+id/rest"
+           android:layout_width="135dp"
+           android:layout_height="27dp"
+           android:layout_alignBottom="@+id/head_sculpture"
+           android:layout_alignLeft="@+id/usename"
+           android:textColor="#e2db0c"
+           android:text="账户余额:¥13"/>
+       <ImageView android:id="@+id/right"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/right"/>
+   </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/iphone"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="手机号"/>
+
+        <TextView
+            android:id="@+id/iphone"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical|left"
+            android:text="15760939122"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textSize="8sp" />
+        <ImageView android:id="@+id/iphoneNum_revise_IV"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right1"/>
+
+    </LinearLayout>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <View android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/licence"/>
+        <TextView android:paddingLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="车牌号"/>
+
+        <TextView
+            android:id="@+id/carlicence"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical|left"
+            android:text="浙A1063警"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textSize="8sp" />
+        <ImageView android:id="@+id/carLicence_revise"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right1"/>
+
+    </LinearLayout>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <View android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/key"/>
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="密码"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical|left"
+            android:text="********"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="8sp" />
+        <ImageView android:id="@+id/password_revise"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right1"/>
+
+    </LinearLayout>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <View android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/carbrand" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="产车商" />
+
+        <TextView
+            android:id="@+id/car_brand"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical|left"
+            android:text="劳斯莱斯"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:gravity="center_vertical"
+            android:text="修改"
+            android:textSize="8sp" />
+
+        <ImageView android:id="@+id/carProduction_revise"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right1" />
+
+    </LinearLayout>
+
+    <View android:background="#343bf7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <View android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout android:id="@+id/exit_LL"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="40dp">
+        <ImageButton android:id="@+id/exit_IB"
+            android:background="#51dcb9"
+            android:src="@drawable/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button android:id="@+id/exit_Button"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="退出"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#51dcb9"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

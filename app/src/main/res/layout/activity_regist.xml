@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="欢迎使用智停科技"
+            android:textSize="30dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/input_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/username"
+        android:gravity="center"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/car_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入车牌号"
+        android:maxLength="7"
+        android:gravity="center"
+        android:drawableLeft="@drawable/car"/>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/password"
+        android:gravity="center"
+        android:hint="请输入密码(最多8位)"
+        android:inputType="textPassword"
+        android:maxLength="8" />
+
+    <EditText
+        android:id="@+id/twice_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:gravity="center"
+        android:drawableLeft="@drawable/password"/>
+    <LinearLayout android:orientation="horizontal"
+       android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <Button android:id="@+id/cancel"
+
+            android:layout_weight="0.5"
+            android:layout_marginLeft="20dp"
+            android:text="取消"
+            android:layout_width="30dp"
+            android:background="#ef3838"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:id="@+id/submit"
+            android:layout_width="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="20dp"
+           android:background="#78e952"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

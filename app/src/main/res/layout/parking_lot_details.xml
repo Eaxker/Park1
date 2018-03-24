@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:weightSum="1">
+
+        <ImageView android:id="@+id/backtoPaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_parking" />
+
+        <TextView
+            android:layout_width="282dp"
+            android:layout_height="40dp"
+
+            android:gravity="center"
+            android:text="停车场详情"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:paddingEnd="20dp"
+            android:src="@drawable/collect" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="244dp"
+        android:layout_weight="0.18"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4e62df"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/parking_image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/parking_image3" />
+
+            <TextView
+                android:id="@+id/parking_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/parking_image2"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:text="万达购物停车场"
+                android:textColor="#d9d210"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/parking_locate_pld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parking_name2"
+                android:paddingLeft="20dp"
+                android:text="西安市政府南路22" />
+
+            <ImageView
+                android:id="@+id/iphone_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/parking_locate_pld"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/tocall" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee7cade">
+
+            <TextView
+                android:id="@+id/freight_basis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥2.5"
+                android:textColor="#130303"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/yuan"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/freight_basis2"
+                android:text="/h"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/toOrder"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/freight_basis2"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="98dp"
+                android:background="#38b41f"
+                android:text="立选车位" />
+
+            <ImageView
+                android:id="@+id/tolocate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/toOrder"
+
+                android:layout_alignTop="@id/toOrder"
+                android:layout_marginRight="10dp"
+
+                android:src="@drawable/tolocate" />
+            <TextView android:text="去定位"
+                android:layout_below="@id/tolocate"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="#3d5ece"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <View android:background="#716f6f"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <View android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

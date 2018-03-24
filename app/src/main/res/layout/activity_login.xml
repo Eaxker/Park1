@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#BBFFFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/password"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/input_username"
+            android:inputType="phone"
+            android:hint="请输入账号"
+            android:gravity="center"
+            android:background="#fff"
+            android:drawableLeft="@drawable/username"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/input_password"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:background="#fff"
+            android:drawableLeft="@drawable/password"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <CheckBox
+            android:id="@+id/rember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <Button
+                android:id="@+id/login"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="登陆" />
+
+            <Button
+                android:id="@+id/regist"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="注册"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thoughtcoing实验室android开发小组"
+        android:layout_gravity="center"/>
+</LinearLayout>

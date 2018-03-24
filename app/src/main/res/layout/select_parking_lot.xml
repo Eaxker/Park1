@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:weightSum="1">
+
+        <ImageView android:id="@+id/back_parking_lot_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_parking" />
+
+        <TextView
+            android:layout_width="282dp"
+            android:layout_height="40dp"
+
+            android:gravity="center"
+            android:text="选择车位"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:paddingEnd="20dp"
+            android:src="@drawable/collect" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:background="#f5f2f2"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridView
+            android:id="@+id/paking_space_GV"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_gravity="center"
+            android:columnWidth="50dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="5"
+            android:orientation="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp">
+        </GridView>
+
+        <View android:background="#4e4c4c"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/invisible_view"
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已选车位：" />
+                <TextView android:text="(每位用户只能选一个车位)"
+                    android:layout_width="match_parent"
+                    android:textSize="10sp"
+                    android:textColor="#e25151"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <View android:background="#aea0a0"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+
+
+
+            <GridLayout
+
+                android:id="@+id/selected_parking_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="5">
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+
+
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="175dp"
+            android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView android:text="总计押金：（¥5/位）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/pay"
+                    android:text="¥5"
+                    android:textSize="25dp"
+                    android:textColor="#dce70b"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button android:text="预定"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:background="#3cd13c"
+                    android:id="@+id/to_order_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+
+
+                   />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
