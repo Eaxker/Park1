@@ -5,11 +5,11 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:background="#d4eda6"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="#d4eda6"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,9 +60,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
-                    android:textColor="#121df2"
                     android:src="@drawable/parking_image3"
                     android:text="万达停车场"
+                    android:textColor="#121df2"
                     android:textSize="18sp" />
 
                 <TextView
@@ -127,28 +127,32 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="35dp"
+                android:paddingLeft="15dp"
                 android:paddingTop="15dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="总费:   ¥" />
+                    android:text="总费: ¥" />
 
-                <TextView android:id="@+id/pay"
-                    android:text="20"
-                    android:textSize="18sp"
-                    android:textColor="#d9af0c"
+                <TextView
+                    android:id="@+id/pay"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <Button android:id="@+id/to_pay"
-                    android:layout_marginLeft="18dp"
-                    android:textColor="#fff"
-                    android:text="去付款"
-                    android:shadowRadius="3"
-                    android:background="#f1512d"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="#d9af0c"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/to_pay"
                     android:layout_width="70dp"
-                    android:layout_height="43dp" />
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f1512d"
+                    android:gravity="center"
+                    android:text="去付款"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#fff" />
 
             </LinearLayout>
         </LinearLayout>

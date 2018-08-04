@@ -1,5 +1,6 @@
 package com.example.easts.park;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -18,7 +19,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+
 
     //获取用户账号相关参数
     private EditText input_username;

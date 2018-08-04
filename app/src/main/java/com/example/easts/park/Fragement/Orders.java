@@ -80,7 +80,6 @@ public class Orders extends Fragment {
         orderAdapter = new OrderAdapter(RecentlyorderList);
         recentlyOrder_RV.setAdapter(orderAdapter);
 
-
         to_park = (ImageButton) view.findViewById(R.id.to_park);
         to_take = (ImageButton) view.findViewById(R.id.to_take);
 

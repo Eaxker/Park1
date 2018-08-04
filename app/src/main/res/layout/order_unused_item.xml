@@ -3,12 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:padding="4dp"
     android:layout_height="wrap_content">
+
     <LinearLayout
-        android:background="#d4eda6"
-        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="#d4eda6"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -59,9 +60,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
-                    android:textColor="#121df2"
                     android:src="@drawable/parking_image3"
                     android:text="万达停车场"
+                    android:textColor="#121df2"
                     android:textSize="18sp" />
 
                 <TextView
@@ -103,10 +104,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -134,33 +135,39 @@
                     android:layout_height="wrap_content"
                     android:text="总费:   ¥" />
 
-                <TextView android:id="@+id/pay"
+                <TextView
+                    android:id="@+id/pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="20"
-                    android:textSize="18sp"
                     android:textColor="#d9af0c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button android:id="@+id/cancel_order"
-                        android:layout_weight="0.5"
-                        android:layout_width="80dp"
-                        android:background="#fff"
-                        android:layout_marginStart="10dp"
-                        android:layout_height="40dp"
-                        android:textSize="12dp"
-                        android:text="取消订单"/>
+                    android:textSize="18sp" />
 
-                    <Button android:id="@+id/to_use"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/cancel_order"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="10dp"
-                        android:textColor="#fff"
-                        android:text="去停车"
+                        android:layout_weight="0.5"
+                        android:background="#fff"
+                        android:text="取消订单"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/to_use"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="0.5"
                         android:background="#0a9bc7"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp" />
+                        android:textSize="10dp"
+                        android:text="去停车"
+                        android:textColor="#fff" />
 
                 </LinearLayout>
 

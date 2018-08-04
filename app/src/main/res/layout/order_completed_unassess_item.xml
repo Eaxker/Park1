@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <LinearLayout
-        android:background="#d4eda6"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="match_parent">
+<LinearLayout
+    android:layout_marginBottom="2dp"
+    android:background="#d4eda6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+   >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="153dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <!--停车场商家图片-->
@@ -20,10 +24,12 @@
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:src="@drawable/parking_image3" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,88 +47,89 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="2dp">
-            <!--停车场商家名-->
-            <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:paddingLeft="2dp">
+                <!--停车场商家名-->
+                <LinearLayout
 
-                <TextView
-                    android:id="@+id/parking_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
-                    android:textColor="#121df2"
-                    android:src="@drawable/parking_image3"
-                    android:text="万达停车场"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/order_state"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:gravity="right"
-                    android:text="已完成"
-                    android:textColor="#2de914" />
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/parking_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/parking_image3"
+                        android:text="万达停车场"
+                        android:textColor="#121df2"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="订单时间"
-                android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/order_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="已完成"
+                        android:textColor="#2de914" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单时间"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="起:"
+                        android:textColor="#3bd93e" />
+
+                    <TextView
+                        android:id="@+id/start_parking_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="2017-10-14 23:11:58"
+                        android:textColor="#3bd93e" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="终:"
+                        android:textColor="#cc4039" />
+
+                    <TextView
+                        android:id="@+id/end_parking_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="2017-10-14 23:11:58"
+                        android:textColor="#cc4039" />
+                </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="起:"
-                    android:textColor="#3bd93e" />
-
-                <TextView
-                    android:id="@+id/start_parking_datetime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:text="2017-10-14 23:11:58"
-                    android:textColor="#3bd93e" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="终:"
-                    android:textColor="#cc4039" />
-
-                <TextView
-                    android:id="@+id/end_parking_datetime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:text="2017-10-14 23:11:58"
-                    android:textColor="#cc4039" />
-            </LinearLayout>
-
-            <LinearLayout android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
                 android:paddingLeft="0dp"
                 android:paddingTop="15dp">
 
@@ -131,36 +138,42 @@
                     android:layout_height="wrap_content"
                     android:text="总费:   ¥" />
 
-                <TextView android:id="@+id/pay"
+                <TextView
+                    android:id="@+id/pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="20"
-                    android:textSize="18sp"
                     android:textColor="#d9af0c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <LinearLayout android:paddingLeft="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button android:id="@+id/to_assess_BT"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="10dp">
+
+                    <Button
+                        android:id="@+id/to_assess_BT"
                         android:layout_width="70dp"
                         android:layout_height="30dp"
                         android:layout_weight="0.5"
                         android:background="#ac31c4"
-                        android:text="评价"/>
-                    <Button android:id="@+id/to_order_again_BT"
-                        android:layout_marginLeft="10dp"
-                        android:textColor="#fff"
-                        android:text="再去订"
-                        android:shadowRadius="3"
-                        android:background="#30d727"
+                        android:textSize="10sp"
+                        android:text="评价" />
+
+                    <Button
+                        android:id="@+id/to_order_again_BT"
                         android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
                         android:layout_weight="0.5"
-                        android:layout_height="30dp" />
+                        android:background="#30d727"
+                        android:textSize="10sp"
+                        android:text="再去订"
+                        android:textColor="#fff" />
                 </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
-
-
-</LinearLayout>
+</RelativeLayout>
